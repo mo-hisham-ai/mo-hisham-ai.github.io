@@ -532,6 +532,16 @@ body.dark .devicon-matplotlib-plain.colored {
   color: #5ea8d6;
 }
 
+/* الصورة الشخصية ملف فيه دائرة على خلفية بيضاء، نقصّها على شكل دائرة حتى تظهر نظيفة */
+#profile .section__pic-container img {
+  clip-path: circle(49.5% at 50% 50%);
+}
+
+/* الأيقونات الأصلية سوداء، نعكس لونها في الوضع الداكن حتى تظهر */
+body.dark .icon {
+  filter: invert(1);
+}
+
 /* قائمة الجوال */
 body.dark .menu-links {
   background-color: #1e1e1e;
